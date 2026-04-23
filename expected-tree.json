@@ -1,0 +1,176 @@
+{
+  "_comment": "Expected dependency tree for paket-mixed-nuget-paket probe. Fields marked PLACEHOLDER must be substituted by the scan runner at comparison time. Two Mend projects correspond to PaketProject.csproj (Paket-managed, lockfile-driven) and NuGetProject.csproj (NuGet PackageReference, resolver-driven). The scanSummaryInfo.packageManagers list must include both 'paket' and 'nuget' (or 'dotnet-nuget') to confirm both detection paths were exercised.",
+  "updateType": "OVERRIDE",
+  "type": "UA",
+  "agent": "paket",
+  "agentVersion": "PLACEHOLDER",
+  "pluginVersion": "PLACEHOLDER",
+  "orgToken": "PLACEHOLDER",
+  "userKey": "PLACEHOLDER",
+  "timeStamp": 0,
+  "requesterEmail": "PLACEHOLDER",
+  "aggregateModules": false,
+  "preserveModuleStructure": true,
+  "extraProperties": {
+    "contributionsAvailable": "PLACEHOLDER",
+    "commitUrl": "PLACEHOLDER",
+    "gitHubInstallationId": "PLACEHOLDER",
+    "scmApplicationId": "PLACEHOLDER",
+    "branchName": "main",
+    "checkRunId": "PLACEHOLDER",
+    "userOrgToken": "PLACEHOLDER",
+    "commitId": "PLACEHOLDER",
+    "scmInstallationId": "PLACEHOLDER",
+    "repository": "paket-mixed-nuget-paket",
+    "scaResults": "PLACEHOLDER"
+  },
+  "scanSummaryInfo": {
+    "totalElapsedTime": 0,
+    "stepsSummaryInfo": [],
+    "packageManagers": ["paket", "nuget"],
+    "isPrivileged": false,
+    "scanMethod": {
+      "type": "UA"
+    }
+  },
+  "contributions": [],
+  "projects": [
+    {
+      "_comment": "PaketProject — src/PaketProject/PaketProject.csproj. Detected via Paket lockfile-driven resolution. Packages from src/PaketProject/paket.references: Newtonsoft.Json, Serilog. Versions resolved from root paket.lock.",
+      "projectToken": "PLACEHOLDER",
+      "dependencies": [
+        {
+          "groupId": "",
+          "artifactId": "Newtonsoft.Json",
+          "version": "13.0.3",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": null
+        },
+        {
+          "groupId": "",
+          "artifactId": "Serilog",
+          "version": "3.1.1",
+          "systemPath": "",
+          "optional": false,
+          "filename": "paket.lock",
+          "dependencyType": "NUGET",
+          "dependencyFile": "paket.lock",
+          "children": null
+        }
+      ]
+    },
+    {
+      "_comment": "NuGetProject — src/NuGetProject/NuGetProject.csproj. Detected via NuGet PackageReference resolver-driven resolution. No paket.references present. Packages declared inline in csproj: Microsoft.Extensions.Logging 8.0.0, AutoMapper 12.0.1.",
+      "projectToken": "PLACEHOLDER",
+      "dependencies": [
+        {
+          "groupId": "",
+          "artifactId": "Microsoft.Extensions.Logging",
+          "version": "8.0.0",
+          "systemPath": "",
+          "optional": false,
+          "filename": "NuGetProject.csproj",
+          "dependencyType": "NUGET",
+          "dependencyFile": "NuGetProject.csproj",
+          "children": [
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "8.0.1",
+              "systemPath": "",
+              "optional": false,
+              "filename": "NuGetProject.csproj",
+              "dependencyType": "NUGET",
+              "dependencyFile": "NuGetProject.csproj",
+              "children": null
+            },
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "8.0.0",
+              "systemPath": "",
+              "optional": false,
+              "filename": "NuGetProject.csproj",
+              "dependencyType": "NUGET",
+              "dependencyFile": "NuGetProject.csproj",
+              "children": [
+                {
+                  "groupId": "",
+                  "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+                  "version": "8.0.1",
+                  "systemPath": "",
+                  "optional": false,
+                  "filename": "NuGetProject.csproj",
+                  "dependencyType": "NUGET",
+                  "dependencyFile": "NuGetProject.csproj",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.Options",
+              "version": "8.0.0",
+              "systemPath": "",
+              "optional": false,
+              "filename": "NuGetProject.csproj",
+              "dependencyType": "NUGET",
+              "dependencyFile": "NuGetProject.csproj",
+              "children": [
+                {
+                  "groupId": "",
+                  "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+                  "version": "8.0.1",
+                  "systemPath": "",
+                  "optional": false,
+                  "filename": "NuGetProject.csproj",
+                  "dependencyType": "NUGET",
+                  "dependencyFile": "NuGetProject.csproj",
+                  "children": null
+                },
+                {
+                  "groupId": "",
+                  "artifactId": "Microsoft.Extensions.Primitives",
+                  "version": "8.0.0",
+                  "systemPath": "",
+                  "optional": false,
+                  "filename": "NuGetProject.csproj",
+                  "dependencyType": "NUGET",
+                  "dependencyFile": "NuGetProject.csproj",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupId": "",
+          "artifactId": "AutoMapper",
+          "version": "12.0.1",
+          "systemPath": "",
+          "optional": false,
+          "filename": "NuGetProject.csproj",
+          "dependencyType": "NUGET",
+          "dependencyFile": "NuGetProject.csproj",
+          "children": [
+            {
+              "groupId": "",
+              "artifactId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "8.0.1",
+              "systemPath": "",
+              "optional": false,
+              "filename": "NuGetProject.csproj",
+              "dependencyType": "NUGET",
+              "dependencyFile": "NuGetProject.csproj",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+
+nuget Newtonsoft.Json >= 13.0.0
+nuget Serilog >= 3.0.0
